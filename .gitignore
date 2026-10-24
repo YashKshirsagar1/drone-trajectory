@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+# demo.py writes this to the repo root; figures belong in results/
+/comparison.png

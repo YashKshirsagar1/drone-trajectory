@@ -1,0 +1,99 @@
+42 cases (7 buildings x 6 seeds) on 4 processes
+  [ 1/42] rect      seed 0  K=6  opt   22s     25s elapsed
+  [ 2/42] rect      seed 1  K=6  opt   34s     38s elapsed
+  [ 3/42] rect      seed 2  K=6  opt   25s     38s elapsed
+  [ 4/42] rect      seed 3  K=4  opt   27s     38s elapsed
+  [ 5/42] rect      seed 4  K=7  opt    7s     38s elapsed
+  [ 6/42] rect      seed 5  K=6  opt   37s     67s elapsed
+  [ 7/42] hexagon   seed 0  K=8  opt   22s     67s elapsed
+  [ 8/42] hexagon   seed 1  K=8  opt   23s     67s elapsed
+  [ 9/42] hexagon   seed 2  K=8  opt   31s     73s elapsed
+  [10/42] hexagon   seed 3  K=5  opt   11s     73s elapsed
+  [11/42] hexagon   seed 4  K=5  opt   13s     77s elapsed
+  [12/42] hexagon   seed 5  K=6  opt   29s    100s elapsed
+  [13/42] L         seed 0  K=7  opt   37s    110s elapsed
+  [14/42] L         seed 1  K=8  opt   16s    110s elapsed
+  [15/42] L         seed 2  K=7  opt   33s    113s elapsed
+  [16/42] L         seed 3  K=8  opt   31s    127s elapsed
+  [17/42] L         seed 4  K=8  opt   41s    146s elapsed
+  [18/42] L         seed 5  K=8  opt   16s    146s elapsed
+  [19/42] U         seed 0  K=6  opt   52s    169s elapsed
+  [20/42] U         seed 1  K=7  opt   97s    229s elapsed
+  [21/42] U         seed 2  K=8  opt   43s    229s elapsed
+  [22/42] U         seed 3  K=6  opt   39s    229s elapsed
+  [23/42] U         seed 4  K=8  opt   10s    229s elapsed
+  [24/42] U         seed 5  K=8  opt   11s    229s elapsed
+  [25/42] cross     seed 0  K=8  opt   48s    233s elapsed
+  [26/42] cross     seed 1  K=6  opt   53s    244s elapsed
+  [27/42] cross     seed 2  K=7  opt   18s    244s elapsed
+  [28/42] cross     seed 3  K=8  opt   12s    244s elapsed
+  [29/42] cross     seed 4  K=6  opt   20s    251s elapsed
+  [30/42] cross     seed 5  K=8  opt   25s    257s elapsed
+  [31/42] courtyard seed 0  K=6  opt   62s    300s elapsed
+  [32/42] courtyard seed 1  K=8  opt   71s    320s elapsed
+  [33/42] courtyard seed 2  K=7  opt   62s    320s elapsed
+  [34/42] courtyard seed 3  K=7  opt   31s    320s elapsed
+  [35/42] courtyard seed 4  K=4  opt   37s    335s elapsed
+  [36/42] courtyard seed 5  K=6  opt   15s    335s elapsed
+  [37/42] multi     seed 0  K=6  opt   12s    335s elapsed
+  [38/42] multi     seed 1  K=7  opt   45s    369s elapsed
+  [39/42] multi     seed 2  K=5  opt   75s    398s elapsed
+  [40/42] multi     seed 3  K=8  opt   12s    398s elapsed
+  [41/42] multi     seed 4  K=4  opt   60s    398s elapsed
+  [42/42] multi     seed 5  K=5  opt   39s    398s elapsed
+
+== planned, concave (n = 30 paired cases) ==
+metric              orbit    naive    optim    Δ vs naive        p    Δ vs orbit        p
+Coverage %          82.15    92.57    90.46     -2.11        0.209     +8.31 *** 0.000112
+Angle target °      29.27    23.44    22.80     -0.64         0.67     -6.46 *** 1.23e-05
+Angle UAV °         28.83    26.40    21.71     -4.70 *** 5.38e-05     -7.13 *** 3.01e-07
+Obs. dist m         39.79    23.88    18.89     -4.99 *** 1.48e-09    -20.90 *** 2.14e-16
+Stability %         94.73    95.10    98.37     +3.27 *** 6.09e-05     +3.64   *   0.0286
+Smooth °/frame       0.44     0.61     0.63     +0.02         0.13     +0.19 *** 3.66e-16
+Max yaw step °       0.44     5.50     2.50     -2.99       0.0519     +2.06 *** 5.85e-10
+Distance m         415.54   357.58   324.05    -33.53 *** 6.81e-10    -91.49 *** 4.71e-19
+Time s             207.77   178.79   162.03    -16.76 *** 6.81e-10    -45.74 *** 4.71e-19
+Min standoff m      21.20     6.95     9.96     +3.02  **  0.00444    -11.24 ***  4.8e-20
+
+== planned, convex (n = 12 paired cases) ==
+metric              orbit    naive    optim    Δ vs naive        p    Δ vs orbit        p
+Coverage %         100.00   100.00    99.94     -0.06        0.339     -0.06        0.339
+Angle target °      19.83    17.93    13.53     -4.41   *   0.0437     -6.31   *   0.0116
+Angle UAV °         21.42    26.08    16.85     -9.24 *** 8.34e-06     -4.57  **  0.00821
+Obs. dist m         28.82    21.03    14.34     -6.69 *** 9.54e-07    -14.49 *** 1.99e-07
+Stability %        100.00    94.28   100.00     +5.72  **  0.00203     +0.00          nan
+Smooth °/frame       0.55     0.68     0.73     +0.05       0.0672     +0.18 *** 9.59e-07
+Max yaw step °       0.55     4.71     1.73     -2.98   *   0.0132     +1.18 *** 1.33e-06
+Distance m         330.47   290.34   250.56    -39.77 *** 3.23e-07    -79.91 *** 1.99e-07
+Time s             165.24   145.17   125.28    -19.89 *** 3.23e-07    -39.95 *** 1.99e-07
+Min standoff m      20.70     9.00     9.95     +0.95        0.477    -10.75 *** 6.71e-08
+
+== wind, concave (n = 30 paired cases) ==
+metric              orbit    naive    optim    Δ vs naive        p    Δ vs orbit        p
+Coverage %          82.97    92.81    89.83     -2.98   *   0.0277     +6.86  **   0.0012
+Angle target °      29.39    23.07    22.13     -0.94        0.464     -7.26 *** 1.05e-06
+Angle UAV °         29.11    26.73    22.19     -4.55 ***  3.7e-05     -6.93 *** 5.26e-07
+Obs. dist m         39.89    24.27    19.14     -5.13 ***  2.7e-09    -20.76 *** 8.15e-16
+Stability %         95.38    95.10    98.26     +3.17 *** 0.000184     +2.88   *   0.0449
+Smooth °/frame       0.44     0.61     0.63     +0.02        0.117     +0.19 *** 3.69e-16
+Max yaw step °       0.47     4.02     2.54     -1.48 *** 0.000132     +2.07 *** 1.85e-10
+Distance m         439.28   380.08   344.69    -35.39 ***  1.9e-09    -94.58 ***  3.3e-18
+Time s             219.64   190.04   172.35    -17.69 ***  1.9e-09    -47.29 ***  3.3e-18
+Min standoff m      19.37     6.78     8.53     +1.75       0.0834    -10.84 *** 6.55e-18
+
+== wind, convex (n = 12 paired cases) ==
+metric              orbit    naive    optim    Δ vs naive        p    Δ vs orbit        p
+Coverage %          99.96   100.00    99.85     -0.15         0.21     -0.11        0.339
+Angle target °      19.94    17.59    13.35     -4.24       0.0626     -6.59  **  0.00759
+Angle UAV °         21.53    26.60    17.22     -9.38 *** 1.61e-05     -4.31   *    0.012
+Obs. dist m         28.70    21.24    14.43     -6.81 *** 2.46e-06    -14.27 *** 1.23e-07
+Stability %        100.00    93.89   100.00     +6.11  **  0.00107     +0.00          nan
+Smooth °/frame       0.55     0.68     0.73     +0.05       0.0678     +0.18 *** 9.63e-07
+Max yaw step °       0.60     4.22     1.76     -2.46  **  0.00601     +1.16 *** 2.77e-06
+Distance m         349.30   308.53   266.34    -42.18 *** 5.44e-07    -82.96 *** 1.08e-07
+Time s             174.65   154.26   133.17    -21.09 *** 5.44e-07    -41.48 *** 1.08e-07
+Min standoff m      18.94     8.04     8.55     +0.51        0.704    -10.39 *** 3.42e-08
+
+paired t-test: * p<.05  ** p<.01  *** p<.001 (Wilcoxon p in the CSV)
+
+wrote results/experiments.csv, experiments_ttests.csv, experiments_cases.png in 398s

@@ -1,0 +1,41 @@
+U-shape: optimizing ...
+  optimizer: J 101.260 -> 2.067 in 34 iters, 42s
+  logs in /tmp/gz_inspection_bj94jzjw
+  connecting to SITL ...
+  waiting for the EKF to use GPS ...
+    [ap] Barometer 1 calibration complete
+    [ap] Barometer 2 calibration complete
+    [ap] ArduPilot Ready
+    [ap] Field Elevation Set: 584m
+    [ap] RC7: SaveWaypoint LOW
+    [ap] RC8: PrecisionLoiter MIDDLE
+    [ap] EKF3 IMU0 initialised
+    [ap] EKF3 IMU1 initialised
+    [ap] EKF3 IMU0 tilt alignment complete
+    [ap] EKF3 IMU1 tilt alignment complete
+    [ap] EKF3 IMU1 MAG0 initial yaw alignment complete
+    [ap] EKF3 IMU0 MAG0 initial yaw alignment complete
+    [ap] GPS 1: probing for u-blox at 230400 baud
+    [ap] GPS 1: detected u-blox
+    [ap] EKF3 IMU1 origin set
+    [ap] EKF3 IMU0 origin set
+    [ap] EKF3 IMU0 is using GPS
+    [ap] EKF3 IMU1 is using GPS
+  spawn is at local N 23.3 E -13.1; arming ...
+    [ap] Arming motors
+  taking off to 10 m ...
+    [ap] EKF3 IMU0 MAG0 in-flight yaw alignment complete
+    [ap] EKF3 IMU1 MAG0 in-flight yaw alignment complete
+  flying 337 m at 2.0 m/s (168 s sim time) ...
+  lap complete, landing
+
+metric                         planned  flown (Gazebo)
+coverage_pct                    100.00          100.00
+angle_dev_target_deg             20.09           20.19
+obs_distance_m                   14.75           14.78
+visual_stability_pct            100.00          100.00
+smoothness_deg_per_frame          0.74            0.74
+min_standoff_m                    9.94            9.96
+distance_m                      337.03          337.52
+tracking error rms 0.13 m, max 1.46 m; yaw error max 1.6 deg
+wrote results/gazebo_u.mp4, results/gazebo_u_flightlog.csv
